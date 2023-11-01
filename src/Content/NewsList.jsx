@@ -2,7 +2,6 @@ import divider from "../assets/images/rectangle-3.png"
 import newsHacker from "../assets/images/computer-hack.png"
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Card from "../Components/Card"
 import { Link } from "react-router-dom"
 
 const NewsList = () => {
