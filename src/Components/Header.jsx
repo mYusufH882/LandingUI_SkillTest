@@ -6,7 +6,7 @@ function Header() {
             <div className="col-md navgroup">
                 <nav className="navbar navbar-expand-lg navbar-light m-2">
                     <div className="container">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand" href="/">
                             <img src={elKopra} alt="Logo" className="logo-elkopra" />
                         </a>
                         <div className="d-flex">

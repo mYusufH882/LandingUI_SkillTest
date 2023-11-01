@@ -51,11 +51,14 @@ class Feedback extends React.Component {
                                                 needs and help to accelerate their business at any scale. We deliver
                                                 consistent
                                             </p>
-                                            <div className="input-group my-3">
-                                                <input type="text" className="form-control input" placeholder="Input email"
-                                                    aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                                <button className="btn btn-outline-light btn-warning tombol w-25" type="button"
-                                                    id="button-addon2">Send Email</button>
+                                            <div className="col-md-10">
+                                                <div className="input-group my-3">
+                                                    <input type="text" className="form-control input" placeholder="Input email"
+                                                        aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                                    <button className="btn btn-outline-light btn-warning tombol w-25" type="button"
+                                                        id="button-addon2">Send Email</button>
+                                                </div>
+
                                             </div>
                                             <p className="noted">
                                                 This site is protected by reCAPTCHA and the Google <a href="#"

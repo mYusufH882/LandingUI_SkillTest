@@ -1,13 +1,16 @@
-import Feedback from "../Content/Feedback"
-import Jumbotron from "../Content/Jumbotron"
-import News from "../Content/News"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "../Content/Home"
+import NewsList from "../Content/NewsList"
 
 function Body() {
     return (
         <div>
-            <Jumbotron />
-            <News />
-            <Feedback />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/news-list" element={<NewsList />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }

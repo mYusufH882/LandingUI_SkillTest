@@ -3,13 +3,13 @@ import newsHacker from '../assets/images/computer-hack.png'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from '../Components/Card'
+import { Link } from 'react-router-dom'
 
 const News = () => {
     const apiKey = "df6e00a661d24f67a8159bdf32c461fa"
 
     // const query = "everything?q=tesla&from=2023-10-01&sortBy=popularity&"
     const query = "top-headlines?country=id&pageSize=3&category=technology&"
-    // const query = "top-headlines/sources?category=business"
 
     const url = "https://newsapi.org/v2/" + query + "apiKey=" + apiKey
 
@@ -54,7 +54,9 @@ const News = () => {
 
                         <div className="row">
                             <div className="col-md text-center">
-                                <a href="#" className="btn btn-primary btn-sm">Read More</a>
+                                <Link to="/news-list">
+                                    <span href="#" className="btn btn-primary btn-sm mt-5">Baca Selengkapnya...</span>
+                                </Link>
                             </div>
                         </div>
 
